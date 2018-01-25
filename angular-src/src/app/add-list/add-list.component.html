@@ -1,0 +1,17 @@
+<div class="container">
+  
+    <form (ngSubmit)="onSubmit()">
+      <input type="text" class="form-control" [(ngModel)]="newList.title" name="title" placeholder="title" required>
+      
+      <select class="form-control" name="cat" [(ngModel)]="newList.category">  	
+        <option value="High" selected>High Priority</option>
+  			<option value="Medium">Medium Priority</option>
+  			<option value="Low">Low Prioirty</option>
+      </select>
+    
+      <input type="text" class="form-control" [(ngModel)]="newList.description" name="description" placeholder="description" required>
+    
+      <button type="submit" class="push-button-down btn btn-success">Submit</button>
+ 	
+    </form>
+</div>
